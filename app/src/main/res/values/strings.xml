@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="emailTelaLogin">Email</string>
+    <string name="senhaTelaLogin">Senha</string>
+    <string name="sing_inTelaLogin">SING IN</string>
+    <string name="imagemTelaLogin">Imagem</string>
+    <string name="esqueceuTelaLogin">Esqueceu a senha?</string>
+</resources>
