@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProdutoAdminActivity">
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="390dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nome Produto"
+        android:textColor="#C3534C4C"
+        app:layout_constraintBottom_toTopOf="@+id/textDescricao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDescricao"
+        android:layout_width="390dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Descrição do Produto"
+        android:textColor="#C3534C4C"
+        app:layout_constraintBottom_toTopOf="@+id/textValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="202dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Digite o valor"
+        android:textColor="#C3534C4C"
+        app:layout_constraintBottom_toTopOf="@+id/textQuant"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextQuant"
+        android:layout_width="202dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Digite a quantidade"
+        android:textColor="#C3534C4C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="Código de Barras:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextLeitor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="Nome:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNome"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="Descrição:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDescricao"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="Valor:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextValor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textQuant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="Quantidade:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextQuant"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLeitor"
+        android:layout_width="335dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Utilize o leitor ou digite"
+        android:textColor="#C3534C4C"
+        app:layout_constraintBottom_toTopOf="@+id/textNome"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="158dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="35dp"
+        android:background="#C9174A"
+        android:text="Button"
+        android:textColor="#FDFDFD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="SALVAR" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#C9174A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        tools:layout_editor_absoluteY="299dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,6 @@
 package com.example.myapplication.model;
 
-import com.google.firebase.database.Exclude;
+
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -83,12 +83,12 @@ public class Cliente implements Serializable {
         this.pedidos_keys = keys_pedidos;
     }
 
-    @Exclude
+    //@Exclude
     public Integer getIndex() {
         return index;
     }
 
-    @Exclude
+    //@Exclude
     public void setIndex(Integer index) {
         this.index = index;
     }

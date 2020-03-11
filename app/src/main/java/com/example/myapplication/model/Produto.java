@@ -1,9 +1,7 @@
 package com.example.myapplication.model;
 
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 
-import com.google.firebase.database.Exclude;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -86,12 +84,12 @@ public class Produto implements Serializable{
         this.url_foto = url_foto;
     }
 
-    @Exclude
+    //@Exclude
     public Integer getIndex_produto() {
         return index_produto;
     }
 
-    @Exclude
+   // @Exclude
     public void setIndex_produto(Integer index_produto) {
         this.index_produto = index_produto;
     }
@@ -111,19 +109,4 @@ public class Produto implements Serializable{
                 '}';
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Produto produto = (Produto) o;
-        return Objects.equals(key, produto.key);
-    }
-
-
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    @Override
-    public int hashCode() {
-        return Objects.hash(key);
-    }
 }

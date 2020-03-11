@@ -1,7 +1,7 @@
 package com.example.myapplication.model;
 
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.Exclude;
+
 
 public class User {
 
@@ -55,12 +55,12 @@ public class User {
         this.email = email;
     }
 
-    @Exclude
+    //@Exclude
     public FirebaseUser getFirebaseUser() {
         return firebaseUser;
     }
 
-    @Exclude
+    //@Exclude
     public void setFirebaseUser(FirebaseUser firebaseUser) {
         this.firebaseUser = firebaseUser;
     }

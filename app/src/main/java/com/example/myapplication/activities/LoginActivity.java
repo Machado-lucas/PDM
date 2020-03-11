@@ -6,9 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.R;
@@ -22,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "loginActivity";
     private FirebaseAuth mAuth;
     private EditText etEmail, etSenha;
+    private Button btSignIn;
+    private TextView tvEsqueciSenha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +37,9 @@ public class LoginActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         etEmail = findViewById(R.id.emailLogin);
         etSenha = findViewById(R.id.senhaLogin);
-        findViewById(R.id.botaoLogin).setOnClickListener(
+        btSignIn = findViewById((R.id.botaoLogin));
+        tvEsqueciSenha = findViewById((R.id.esqueceuSEnhaTelaLogin));
+        btSignIn.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -43,6 +50,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void signIn(String email, String password){
+        Toast.makeText(this, "Sign In", Toast.LENGTH_SHORT).show();
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -59,9 +67,8 @@ public class LoginActivity extends AppCompatActivity {
                                     Toast.LENGTH_SHORT).show();
                             //updateUI(null);
                         }
-
-                        // ...
                     }
                 });
     }
+
 }
