@@ -5,4 +5,6 @@
     <string name="sing_inTelaLogin">SING IN</string>
     <string name="imagemTelaLogin">Imagem</string>
     <string name="esqueceuTelaLogin">Esqueceu a senha?</string>
+    <string name="menu_limparform">Limpa Menu</string>
+    <string name="menu_lercodigodebarras">Código de barras</string>
 </resources>
